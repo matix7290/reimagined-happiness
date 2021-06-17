@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "nedb": "^1.8.0",
+    "session-file-store": "^1.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "lek9",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Mateusz Olszewski 3Ic1",
+  "license": "ISC",
+  "description": ""
+}

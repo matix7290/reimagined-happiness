@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page title</title>
+<script defer src="main.js?1ea83279885a903946a2"></script></head>
+<body>
+    <div id="overlay">
+        <p id="overlayText"></p>
+    </div>
+
+
+    <div id="login">
+        <label for="nick" id="nick_lable">Twój nick:</label>
+        <input type="text" name="nick" id="nick" placeholder="Podaj nick" required>
+        <button id="sub">OK</button>
+        <p id="used">Login zajęty!</p>
+    </div>
+    <div id="players">
+        <div id="red">
+            <p id="red_player">?</p>
+        </div>
+        <div id="green">
+            <p id="green_player">?</p>
+        </div>
+        <div id="blue">
+            <p id="blue_player">?</p>
+        </div>
+        <div id="yellow">
+            <p id="yellow_player">?</p>
+        </div>
+
+        <label class="switch" id="readyOrNot">
+            <input id="check" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+        <div id="ready_div">
+            <p id="ready">Nie gotowy do gry</p>
+        </div>
+        <div id="timerStart">
+            <p id="timerNumber">10</p>
+        </div>
+    </div>
+
+    <div id="board">
+        <button id="die">Roll a die</button>
+        <p id="dieNumber"></p>
+        <img id="diePicture" src="#" width="100px" height="100px">
+        <div id="root"></div>
+    </div>
+</body>
+</html>

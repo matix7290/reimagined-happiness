@@ -1,0 +1,198 @@
+html, body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#login {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#nick_lable {
+    text-align: right;
+    clear: both;
+    float: left;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+#nick {
+    width: 225px;
+    height: 22.5px;
+    padding-right: 40px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+#submit {
+    height: 28px;
+    border-radius: 25px;
+}
+
+#used {
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+#players {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    -ms-transform: translate(-5%, -5%);
+    transform: translate(-5%, -5%);
+}
+
+#red, #green, #blue, #yellow, #ready_div, #timerStart {
+    display: inline-block;
+    position: relative;
+    border-radius: 25px;
+    background-color: gray;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+#red>p, #green>p, #blue>p, #yellow>p, #ready_div>p, #timerStart>p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#ready_div {
+    width: 300px;
+}
+
+#timerStart {
+    display: none;
+    width: 35px;
+}
+
+.switch {
+    display: none;
+    position: relative;
+    text-align: left;
+    clear: both;
+    float: right;
+    margin-left: 5px;
+    width: 60px;
+    height: 35px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #ABEFC8;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #ABEFC8;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#board {
+    width: 100%;
+    height: 75%;
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+#die, #dieNumber, #diePicture {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    display: none;
+    color: black;
+}
+
+#diePicture {
+    background-color: white;
+}
+
+.choose {
+    background-color: pink;
+    border-radius: 50%;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-align: center;
+}
+
+#overlayText {
+    font-size: 100px;
+    text-align: center;
+}
