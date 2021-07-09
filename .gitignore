@@ -107,3 +107,6 @@ static/js/.DS_Store
 static/json/.DS_Store
 static/model/.DS_Store
 static/img/.DS_Store
+.DS_Store
+sessions/
+tables.db
